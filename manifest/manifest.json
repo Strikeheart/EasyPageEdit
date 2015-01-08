@@ -4,7 +4,7 @@
 	"description": "Gestalten Sie Ihre Lieblingsseite selbst",
 	"version": "0,1",
 	"icons": {
-		"128": "128.png"
+		"128": "../images/128.png"
 	},
 	"permissions": [
 		"tabs",
@@ -17,5 +17,5 @@
 			"js" : ["inject.js"] 
 		}
 	]
-	"browser_action": { "default_icon": "16.png", "popup",: "popup.html"
+	"browser_action": { "default_icon": "../images/16.png", "popup",: "popup.html"
 }
