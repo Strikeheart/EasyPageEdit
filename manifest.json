@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Easy page editor",
+	"description": "Gestalten Sie Ihre Lieblingsseite selbst",
+	"version": "0.1",
+	"icons": {
+		"128": "data/images/128.png"
+	},
+	"permissions": [
+		"tabs",
+		"http://*/*",
+		"background"
+	],
+	"background": {
+		"page": "background.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*"], "js": ["inject.js"]
+		}
+	],
+	"browser_action": { 
+		"default_icon": "data/images/16.png", 
+		"default_popup": "popup.html"
+	}
+}
